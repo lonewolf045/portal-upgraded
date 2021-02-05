@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Balsamiq Sans", sans-serif;
+}
+
+#header {
+  background-color: #777777;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid whitesmoke;
+}
+
+#headingContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding: 1%;
+  align-items: center;
+  width: 80%;
+  color: whitesmoke;
+}
+
+#container {
+  height: 100%;
+}
+
+#omegaHeading {
+  font-size: 250%;
+}
+
+#omegaLine {
+  padding-top: 0.5%;
+  font-style: italic;
+  font-size: 125%;
+  color: whitesmoke;
+}
+
+#omegaIcon {
+  height: 100%;
+  margin-right: 1.5%;
+}
+
+#iconImage {
+  display: block;
+  height: 100%;
+}
+
+#profilePic {
+  align-self: center;
+  justify-self: right;
+  border-radius: 50%;
+  background-color: plum;
+  color: white;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+#profilePicDiv {
+  padding-right: 2.5%;
+  display: flex;
+  width: 20%;
+  flex-direction: row-reverse;
+}
+
+#profilePicDiv :hover {
+  box-shadow: 0px 0px 0px 3px lightgray;
+}
+
+#department {
+  width: 20%;
+  height: calc(20% * width);
+  padding: 5%;
+  background-color: lightpink;
+  cursor: pointer;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: row;
+  width:200px;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#buttonContainer button {
+  margin: 5%;
+}
+
+#addButton {
+  box-sizing: content-box;
+  display: flex;
+  background: rgba(119, 136, 153, 0.6);
+  font-family: "Raleway";
+  width: 150px;
+  height: 100px;
+  font-size: 40px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 5%;;
+}
+
+#addButton:hover {
+  box-shadow: 0px 0px 0px 3px lightgray;
+  opacity: 1;
+}
+
+#addButton:active {
+  outline: none;
+}
+
+#add {
+  position: relative;
+}
+
+#add span {
+  display: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+#add:hover span {
+  border: #666 2px dotted;
+  padding: 5px 20px 5px 5px;
+  display: block;
+  z-index: 100;
+  background: #e3e3e3;
+  left: 0px;
+  margin: 15px;
+  width: 300px;
+  position: absolute;
+  top: 115px;
+  text-decoration: none;
+}
+
+#uploadButton {
+  box-sizing: content-box;
+  display: flex;
+  background: rgba(119, 136, 153, 0.6);
+  font-family: "Raleway";
+  width: 150px;
+  height: 100px;
+  font-size: 80px;
+  font-weight: lighter;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 5%;
+  border-left: 1px solid black;
+}
+
+#uploadButton i {
+  font-size: 40px;
+  
+}
+
+#uploadButton:hover {
+  box-shadow: 0px 0px 0px 3px lightgray;
+  opacity: 1;
+}
+
+#uploadButton:active {
+  outline: none;
+}
+
+#upload {
+  position: relative;
+}
+
+#upload span {
+  display: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+#upload:hover span {
+  border: #666 2px dotted;
+  padding: 5px 20px 5px 5px;
+  display: block;
+  z-index: 100;
+  background: #e3e3e3;
+  left: 0px;
+  margin: 15px;
+  width: 300px;
+  position: absolute;
+  top: 115px;
+  text-decoration: none;
+}
+
+.blacklayer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#backArrow {
+  background: none;
+  color: white;
+  border: none;
+  padding: 0;
+  height: 50px;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#backArrow:active {
+  outline: none;
+}
+
+.info-card {
+  min-width: 20%;
+  max-width: 30%;
+  height: calc(20% * width);
+  padding: 5%;
+  background-color: lightpink;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#adminMenu {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-container #btnAdd {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container #btnAdd:hover {
+  opacity: 1;
+}
+
+.form-container #btnClose {
+  background-color: crimson;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container #btnClose:hover {
+  opacity: 1;
+}
+
+.default {
+  display: none;
+  position: fixed;
+  
+  top: 11vh;
+  right: 1vw;
+  width: 150px;
+  /* padding: 3%; */
+  background-color: rgba(155, 255, 255, 0.5);
+  border: 3px solid rgba(145, 245, 240, 0.5);
+  margin: 0;
+  cursor: pointer;
+}
+
+.visible {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileButton {
+  padding: 15%;
+  border: 1px solid rgba(145, 245, 240, 0.5);
+}
+
+button {
+  outline: none;
+}
+
+.list-tab {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2.5%;
+  width: 100%;
+  margin: 10px;
+  align-items: stretch;
+  border: 1rem;
+  padding-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 15px 50px 30px;
+}
+
+.list-detail {
+  width: 16%;
+  padding: 0 1.5rem;
+  padding-bottom: 1.5rem;
+  overflow-wrap: normal;
+  color: white;
+}
+
+.collapsible {
+  background-color: #777777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  font-weight: 700;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  font-size: 23px;
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+#sideMenu {
+  width: 20%;
+  height: 90vh;
+  background-color: #777777;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+}
+
+.option {
+  padding: 2.5%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#workWindow {
+  width: 80%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#paraDiv {
+  display: none;
+  margin-top: 2.5%;
+  width: 100%;
+}
+
+#btnGo {
+  display: none;
+  background-color: #777777;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  margin: 2.5% auto;
+  opacity: 0.8;
+}
+
+#btnGo:hover {
+  opacity: 1;
+}
+
+#viewForm {
+  width: 100%;
+  padding: 2%;
+  min-height: 25%;
+}
+
+#viewForm label {
+  margin-right: 2.5%;
+  margin-bottom: 2.5%;
+  font-weight: bold;
+}
+
+#viewForm select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+}
+
+#viewForm option {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+}
+
+#paraBar {
+  min-height: 5%;
+  max-height: 5%;
+  min-width: 100%;
+  background-color: lightslategray;
+  display: flex;
+  color: whitesmoke;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-bottom: 3.5%;
+}
+
+#list {
+  width: 100%;
+  min-height: 70%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  padding: 2%;
+}
+
+#titleRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#elementRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+div.title {
+  font-size: 18px;
+  padding: 2%;
+  width: 16.66%;
+  border: 1.5px solid black;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+div.element {
+  font-size: 18px;
+  padding: 2%;
+  width: 16.66%;
+  border: 1.5px solid black;
+  font-weight: lighter;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+input.element {
+  font-size: 18px;
+  padding: 2%;
+  width: 16.66%;
+  border: 1.5px solid black;
+  font-weight: lighter;
+}
+
+
+
+
+.options button {
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 1600px) {
+  .none {
+    display: none;
+  }
+  .title {
+    font-size: 15px;
+    max-width: 15%;
+    padding: 1%;
+    word-wrap: break-word;
+  }
+  .element {
+    font-size: 14px;
+    max-width:15%;
+    padding: 1%;
+    word-wrap: break-word;
+  }
+}
+
+.sectionElement {
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  padding-left: 2.5%;
+  text-decoration: underline;
+  cursor: pointer;
+  padding-top: 1.5%;
+}

@@ -1,0 +1,40 @@
+#addCourse {
+    font-size: 50px;
+    border-radius: 50%;
+    border: none;
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: darkgray;
+}
+
+#addCourse:hover {
+    box-shadow: 0px 0px 10px 10px lightgray;
+}
+
+#courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.courseCard {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 5%;
+    margin: 2.5%;
+}
+
+.courseCode {
+    font-size: 40px;
+    font-style: 'Ubuntu' , sans-serif;
+    font-weight: 800;
+}
+
+.courseName {
+    font-size: 30px;
+    font-style: 'Montserrat',sans-serif;
+    font-weight: 600;
+}

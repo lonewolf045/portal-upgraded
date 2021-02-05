@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing:border-box;
+    margin:0;
+    font-family: 'Dosis', sans-serif;
+}
+
+#header {
+    background-color: #777777;
+    height: 10vh;
+}
+
+#headingContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 1%;
+    align-items: center;
+    
+}
+
+#container {
+    height: 100%;
+}
+  
+#omegaHeading {
+    font-size: 250%;
+}
+  
+#omegaLine {
+    padding-top:.5%;
+    font-style: italic;
+    font-size: 125%;
+}
+
+#omegaIcon {
+    height: 100%;
+    margin-right: 1.5%;
+}
+
+#iconImage {
+    display: block;
+    height: 100%;
+}
+
+#loginForm {
+    height: 90vh;
+    background-color: lightgray;
+}
+
+.form-container {
+    max-width: 500px;
+    padding: 3%;
+    background-color: rgba(155, 255, 255, 0.5);
+    border: 3px solid rgba(145, 245, 240, 0.5);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px 50px 30px;
+}
+
+#formHeading {
+    margin:0;
+    margin: 1.25rem 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+b,
+label,
+input,button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container #radio {
+    margin: 5px 0 22px 0;
+}
+
+/* Set a style for the submit/login button */
+.form-container #btnLogin {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+/* Add some hover effects to buttons */
+.form-container #btnLogin:hover {
+  opacity: 1;
+}
